@@ -1,5 +1,5 @@
 # fortune-cocktails
-IBA official cocktail recipes for the fortune program
+IBA official cocktail recipes for the `fortune` program.
 
 ## Example
 ```
@@ -37,9 +37,15 @@ $ sudo pacman -S fortune-mod
 # Mac
 $ brew install fortune
 ```
+### Copying Files
 
-Run `git clone https://github.com/j0hax/fortune-cocktails.git` to download the repository, then copy the fortune files to the directory used by `fortune`:
+```bash
+# Download the repository
+git clone https://github.com/j0hax/fortune-cocktails.git
 
-On Arch/Debian/Ubuntu: `sudo cp fortune-cocktails-master/cocktails* /usr/share/games/fortunes/`
+# Copy to fortune's databases on Linux
+sudo cp fortune-cocktails-master/cocktails* /usr/share/games/fortunes/
 
-On macOS: `sudo cp fortune-cocktails-master/cocktails* /usr/local/share/games/fortunes/`
+# or to Mac
+sudo cp fortune-cocktails-master/cocktails* /usr/local/share/games/fortunes/
+```
