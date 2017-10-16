@@ -37,15 +37,24 @@ $ sudo pacman -S fortune-mod
 # Mac
 $ brew install fortune
 ```
-### Copying Files
 
+### Downloading the repository
 ```bash
-# Download the repository
-git clone https://github.com/j0hax/fortune-cocktails.git
+$ git clone https://github.com/j0hax/fortune-cocktails.git
+$ cd fortune-cocktails-master
+```
 
+### Generating strings file
+If the cocktail recipes do not work out-of-the-box, you may have to regenerate the strings file.
+```bash
+$ strfile cocktails
+```
+
+### Copying to fortune's database
+```
 # Copy to fortune's databases on Linux
-sudo cp fortune-cocktails-master/cocktails* /usr/share/games/fortunes/
+$ sudo cp cocktails cocktails.dat /usr/share/games/fortunes/
 
-# or to Mac
-sudo cp fortune-cocktails-master/cocktails* /usr/local/share/games/fortunes/
+# on macOS
+$ sudo cp cocktails cocktails.dat /usr/local/share/games/fortunes/
 ```
